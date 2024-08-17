@@ -1,0 +1,103 @@
+body {
+  font-family: 'Droid Arabic Kufi', sans-serif; /* Apply the specified font family */
+  direction: rtl; /* Set text direction to right-to-left */
+  text-align: right; /* Align text to the right */
+}
+.dashboard-container {
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #f3f3f3;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 10px;
+  background-color: #4caf50;
+  border-radius: 2px;
+}
+
+button {
+  padding: 6px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Modal background */
+.details-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal content */
+.details-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 50vw; /* Full viewport width */
+  max-height: 90vh; /* Max height of 90% of viewport height */
+  width: 90vw; /* Set a specific width to ensure it’s wider */
+  height: auto; /* Dynamic height */
+  overflow: auto; /* Enable scrolling if content overflows */
+  box-sizing: border-box; /* Include padding in width/height */
+  position: relative; /* Position relative for better control */
+}
+
+/* Header style inside modal */
+.details-content h2 {
+  margin-top: 0;
+  font-size: 18px; /* Adjust header font size as needed */
+}
+
+/* Paragraph style inside modal */
+.details-content p {
+  margin: 10px 0; /* Margin for spacing between paragraphs */
+  font-size: 14px; /* Smaller font size for details */
+}
+
+/* Button style inside modal */
+.details-content button {
+  margin-top: 20px;
+  padding: 8px 16px; /* Padding for the button */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners for the button */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.details-content button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
